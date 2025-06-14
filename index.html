@@ -1,9 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cody Pedro | Electrical Apprentice</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
   <body>
-    <div style="background-color: #1a1a1a; color: white; padding: 60px 20px; text-align: center;">
-      <h1 style="font-size: 2.5em; margin-bottom: 20px;">Cody Pedro</h1>
-      <p style="font-size: 1.2em; max-width: 800px; margin: 0 auto 30px;">Electrical Apprentice</p>
-    </div>
+    <header>
+      <h1>Cody Pedro</h1>
+      <p>First-Year Electrical Apprentice</p>
+    </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I recently graduated from the Electrical Techniques program at St. Clair College. I'm an eager learner with a strong wrk ethic, sharp attention to detail, and a drive to grow within the electrical field.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>Electrical Safety</li>
+      <li>Wiring & Installation</li>
+      <li>Electrical Testing</li>
+      <li>Teamwork</li>
+      <li>Punctuality & Reliability</li>
+      <li>Clear Communication</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p>Electrical Techniques Certificate - St. Clair College</p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <p>My experience includes hands-on home wiring projets and practical training during my college lags. I'm confident in assisting with residential installs and following safety protocols.</p>
+  </section>
+
+  <section>
+    <h2>Resume</h2>
+    <p>Download my resume below:</p>
+    <a href="#" class="resume-button">Download Resume</a>
+  </section>
+
+  <section>
+    <h2>Contact Me</h2>
+    <form onsubmit="event.preventDefault(); alert('Thank you for your message! I will get back to you as soon as possible.');">
+      <input type="text" placeholder="Name" required/>
+      <input type="email" placeholder="Email" required/>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email: cody.pedro@icloud.com</p>
+    <p>Phone: (226) 123-4567</p>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> Cody Pedro
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
   </body>
 </html>
